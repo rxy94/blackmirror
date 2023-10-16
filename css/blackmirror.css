@@ -1,0 +1,36 @@
+/***********************************************/
+/*    Style sheet fo Balck Mirror web site     */
+/*    Author: Ruyi                             */
+/*    Version: 1.0                             */ 
+/*    Commnents: class project 2023-2024       */
+/***********************************************/
+
+
+/*Cuando quiero usar una tipografía y asegurarme que se verá correctamente, suministro también con la página el archivo de la fuente que será .ttf ó .otf  */
+
+/* Paso 1- Ahora enlaza el archivo descargado */
+/* Paso 2- Utilizar el nombre de la font-family donde quiera usarlo. */
+
+@font-face {                                               /*no es un selector, es un enlace*/
+    font-family: blackmirror;                              /*yo nombro esa fuente*/
+    src: url(../font/FontsFree-Net-Proxima-Nova-Bold.otf); /*para subir el enlace pongo (../) y elijo la carpeta donde está el enlace, en este caso font*/
+}
+
+@font-face {
+    font-family: textonormal;
+    src: url(../font/OpenSans-Regular.ttf);
+}
+
+
+/*Al principio pongo un color llamativo de background-color para comprobar que mi archivo html está bien conectado con mi archivo css*/
+body {margin: 0;
+    padding:0;                                              /*para desactivar el espacio de separación por defecto*/
+    background-color: #202020;
+font-family: textonormal;}                                  /*escribo el nombre de la fuente que he puesto yo arriba, 'blackmirror' o 'textonormal*/
+
+
+
+/*uso el wrapper para abarcar una sección que anteriormente he incluido en html con div y pongo id="wrapper" dentro. Para ajustar el tamaño de la sección uso width y para los márgenes margin*/
+#wrapper { background: #808080;  /*Si quiero gradiente voy a W3schools a Color Gradient y copio el link que se genera*/
+        width: 80%; /*ancho fijado al 80%*/
+        margin:auto;} /*centrado autommático*/
